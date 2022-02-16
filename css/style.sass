@@ -3,7 +3,7 @@
 /*                                           Variables */
 $maincolor:#fc54a3
 
-/*                                      Header */    
+/*                                            Header */    
 
 body
     background-color: white
@@ -67,7 +67,7 @@ body
             width: 15%
             justify-content: end
             display: flex
-            margin-right: 2%
+            margin-right: 10%
             transition: all 0.5s ease
             a
                 display: flex
@@ -91,7 +91,7 @@ body
                         font-size: larger
         .car.active
             transition: all 0.5s ease
-            right: 0
+            right: -20px
         .nav-toggler
             display: none
             width: 45px
@@ -104,8 +104,6 @@ body
             align-items: center
             justify-content: center
             transition: all 0.5s ease
-            &:hover
-                background-color: $maincolor
             span
                 height: 2px
                 width: 30px
@@ -201,11 +199,44 @@ body
 /*                                          HEADER */
 body
     .header
+        overflow: hidden
+        padding-top: 4%
         .img
-            img
+            display: flex
+            .img1
                 background-attachment: fixed
                 background-size: cover
                 background-position: center              
+                width: 100%
+                height: -webkit-fill-available
+/*                                          Optimizacion1 */       
+@media (max-width: 900px)   
+    body
+        .header
+            display: flex
+            justify-content: center
+            .img
+                width: 100%
+                .img1
+                    display: none
+                .imgphone
+                    background-attachment: fixed
+                    background-size: cover
+                    background-position: center              
+                    width: 100%
+                    height: -webkit-fill-available    
+/*                                         optimizacion telefono */
+@media ( max-width: 450px )
+    body
+        .header
+            padding-top: 20%
+            .img
+                height: 70vh
+                width: 100%
+                            
+
+
+                
 
 
 
