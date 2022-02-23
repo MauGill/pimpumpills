@@ -21,7 +21,7 @@ document.addEventListener("click", function(e){
 })
 /*                                                      Sticky header */
 window.addEventListener("scroll", function(){
-    if(this.pageYOffset > 100) {
+    if(this.pageYOffset > 1) {
         document.querySelector(".navbar").classList.add("sticky");
     } else {
         document.querySelector(".navbar").classList.remove("sticky");
