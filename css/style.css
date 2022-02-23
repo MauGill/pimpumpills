@@ -204,9 +204,11 @@ body {
     transition: all 0.5s ease; } }
 /*                                          Optimizacion-Telefono */
 @media (max-width: 450px) {
+  body .navbar.sticky .nav.open {
+    padding: 40px; }
   body .navbar.sticky .nav-toggler.active {
     right: -15px;
-    transform: translateY(50px); } }
+    transform: translateY(60px); } }
 /* ------------------------------------------------------------------------------------------------ */
 /*                                          HEADER */
 body .header {
