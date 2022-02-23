@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/webfonts/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Canyour</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" data-aos="fade-up" data-aos-duration="1400" >
         <div class="logo">
             <p>LOG</p>
         </div>
@@ -43,15 +45,18 @@
         </div>
     </div>
     <div class="pimpum">
-        <h2>pimpum underwear</h2>
-        <p>te presentamos nuestra nueva colección de ropa interior!</p>
-        <div class="cont-btn">
+        <div class="underwear" data-aos="fade-up" data-aos-duration="1500" >
+            <h2>pimpum underwear</h2>
+            <p>te presentamos nuestra nueva colección de ropa interior!</p>
+        </div>
+    
+        <div class="cont-btn" data-aos="zoom-in" data-aos-duration="1000" >
             <button class="btn">Ver colección</button>
         </div>
         <div class="banners">
-            <div class="cont-ban">
+            <div class="cont-ban" data-aos="fade-up" data-aos-duration="1000" >
                 <div class="bann">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                         <path d="M64 48C64 21.49 85.49 0 112 0H368C394.5 0 
                         416 21.49 416 48V256H608V352C625.7 352 640 366.3 640 384C640 401.7 625.7 416 608 416H576C576 469 533 512
                         480 512C426.1 512 384 469 384 416H256C256 469 213 512 160 512C106.1 512 64 469 64 416V288H208C216.8 288
@@ -71,9 +76,9 @@
                     </p>
                 </div>
             </div>
-            <div class="cont-ban">
+            <div class="cont-ban" data-aos="fade-up" data-aos-duration="1200">
                 <div class="bann">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path d="M512 32C547.3 32 576 60.65 576 96V128H0V96C0 
                             60.65 28.65 32 64 32H512zM576 416C576 451.3 547.3 480 
                             512 480H64C28.65 480 0 451.3 0 416V224H576V416zM112 3
@@ -88,9 +93,9 @@
                     <p class="text2">pagos con tarjeta y efectivo.</p>
                 </div>
             </div>
-            <div class="cont-ban">
+            <div class="cont-ban" data-aos="fade-up" data-aos-duration="1400" >
                 <div class="bann">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <svg  class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M466.5 83.71l-192-80C269.6 1.67 261.3 0 256 
                             0C250.7 0 242.5 1.67 237.6 3.702l-192 80C27.7 91.1 16
                              108.6 16 127.1c0 257.2 189.2 384 239.1 384c51.1 0 240-
@@ -115,6 +120,7 @@
     <div class="footer">
     
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="js/js.js"></script>
     

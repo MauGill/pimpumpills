@@ -24,6 +24,7 @@ body
         align-items: center
         width: 100%
         position: fixed
+        z-index: 2
         &::before
             content: ''
             position: absolute
@@ -288,7 +289,7 @@ body
             text-transform: uppercase
             text-align: center
             letter-spacing: 4px
-            width: 120vh
+            width: 100%
         .cont-btn   
             height: 10vh
             display: flex
@@ -382,6 +383,8 @@ body
                         display: flex
                         width: 5vh
                         margin-right: 3vh
+                        .svg
+                            width: 50px
                     .text
                         .text1
                             font-weight: 400

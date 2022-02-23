@@ -18,7 +18,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: fixed; }
+    position: fixed;
+    z-index: 2; }
     body .navbar::before {
       content: "";
       position: absolute;
@@ -272,7 +273,7 @@ body .pimpum {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
-    width: 120vh; }
+    width: 100%; }
   body .pimpum .cont-btn {
     height: 10vh;
     display: flex;
@@ -361,6 +362,8 @@ body .pimpum {
         display: flex;
         width: 5vh;
         margin-right: 3vh; }
+        body .pimpum .banners .cont-ban .bann .svg {
+          width: 50px; }
       body .pimpum .banners .cont-ban .text .text1 {
         font-weight: 400;
         letter-spacing: inherit;

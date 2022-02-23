@@ -32,3 +32,7 @@ window.addEventListener("scroll", function(){
         document.querySelector(".car").classList.remove("active")
     }
 })
+/*                                                      Animations on scroll */
+window.addEventListener("load", function(){
+    AOS.init()
+})
