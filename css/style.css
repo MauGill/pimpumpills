@@ -206,7 +206,7 @@ body {
 /*                                          Optimizacion-Telefono */
 @media (max-width: 450px) {
   body .navbar.sticky .nav.open {
-    padding: 40px; }
+    padding: 40px 0px 40px 0px; }
   body .navbar.sticky .nav-toggler.active {
     right: -15px;
     transform: translateY(60px); } }
