@@ -203,13 +203,18 @@ body {
     position: absolute;
     right: 50px;
     transition: all 0.5s ease; } }
-/*                                          Optimizacion-Telefono */
+/*                                          Optimizacion-Telefono Vertical */
 @media (max-width: 450px) {
   body .navbar.sticky .nav.open {
     padding: 40px 0px 40px 0px; }
   body .navbar.sticky .nav-toggler.active {
     right: -15px;
     transform: translateY(60px); } }
+/*                                          Optimizacion-Telefono Horizontal */
+/* @media ( max-width: 450px )
+ * body
+ *     .navbar
+ *         top: -55vh     */
 /* ------------------------------------------------------------------------------------------------ */
 /*                                          HEADER */
 body .header {
@@ -259,7 +264,8 @@ body .pimpum {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px 0 20px;
+  margin: 20px;
+  margin-bottom: 80px;
   overflow: hidden; }
   body .pimpum h2 {
     text-transform: uppercase;
@@ -376,5 +382,146 @@ body .pimpum {
         text-align: inherit;
         margin: 0;
         text-transform: uppercase; } }
+/* -------------------------------------------------------------------------------------------------- */
+/*                                          CLOTHES */
+body .clothes {
+  margin: 20px; }
+  body .clothes .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1%; }
+    body .clothes .products .product {
+      width: 24%;
+      min-width: 50vh;
+      cursor: pointer;
+      margin-bottom: 30px; }
+      body .clothes .products .product img {
+        width: 100%;
+        padding-bottom: 10px;
+        display: block;
+        position: relative;
+        -webkit-transition: all 0.4s linear;
+        transition: all 0.4s linear; }
+        body .clothes .products .product img:hover {
+          -ms-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+      body .clothes .products .product .description {
+        display: grid;
+        text-transform: uppercase;
+        row-gap: 6px; }
+        body .clothes .products .product .description .category {
+          font-size: 12px;
+          color: #5f5f5f; }
+        body .clothes .products .product .description a {
+          text-decoration: none;
+          color: black;
+          font-weight: 900;
+          letter-spacing: 0px; }
+        body .clothes .products .product .description .price {
+          font-size: 12px; }
+
+/*                                          Optimizacion telefono */
+@media (max-width: 450px) {
+  body .clothes .products .product {
+    width: inherit;
+    min-width: inherit; } }
+/*                                           GIFT CARD */
+body .gift-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding-bottom: 50px; }
+  body .gift-card .card2 {
+    width: 100%; }
+  body .gift-card .card1 {
+    display: none; }
+  body .gift-card .descr-card {
+    left: 9%;
+    position: absolute;
+    width: 20%;
+    text-transform: uppercase;
+    height: 48%; }
+    body .gift-card .descr-card h2 {
+      font-size: 45px;
+      font-weight: 300; }
+    body .gift-card .descr-card p {
+      font-size: 12px;
+      font-weight: 400; }
+    body .gift-card .descr-card .cont-btn {
+      height: 10vh;
+      align-items: center;
+      margin-top: 40px; }
+      body .gift-card .descr-card .cont-btn .btn {
+        font-family: "Lato";
+        text-transform: inherit;
+        background-color: black;
+        box-shadow: inherit;
+        border: cornsilk;
+        border-radius: 7vh;
+        color: #fc54a3;
+        width: 24vh;
+        height: 6vh;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.5s ease; }
+        body .gift-card .descr-card .cont-btn .btn:hover {
+          width: 28vh;
+          height: 8vh;
+          letter-spacing: 6px;
+          transition: all 0.5s ease; }
+
+/*                                          Optimizacion */
+@media (max-width: 900px) {
+  body .gift-card .descr-card h2 {
+    font-size: 30px; }
+  body .gift-card .descr-card p {
+    font-size: 10px; }
+  body .gift-card .descr-card .cont-btn .btn {
+    width: 18vh;
+    height: 4vh;
+    letter-spacing: 3px;
+    font-size: 12px; }
+    body .gift-card .descr-card .cont-btn .btn:hover {
+      height: 5vh;
+      width: 19vh;
+      font-size: 15px;
+      letter-spacing: 4px; } }
+/*                                          Optimizacion telefono */
+@media (max-width: 450px) {
+  body .gift-card {
+    margin: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center; }
+    body .gift-card .card2 {
+      display: none; }
+    body .gift-card .card1 {
+      width: 100%;
+      display: block; }
+    body .gift-card .descr-card {
+      text-transform: uppercase;
+      height: 48%;
+      text-align: center;
+      left: inherit;
+      position: inherit;
+      width: inherit; }
+      body .gift-card .descr-card h2 {
+        font-size: 40px; }
+      body .gift-card .descr-card p {
+        font-size: 14px; }
+      body .gift-card .descr-card .cont-btn .btn {
+        width: 20vh;
+        height: 5vh;
+        letter-spacing: 3px;
+        font-size: 16px; }
+        body .gift-card .descr-card .cont-btn .btn:hover {
+          height: 6vh;
+          width: 23vh;
+          font-size: 18px;
+          letter-spacing: 4px; } }
 
 /*# sourceMappingURL=style.css.map */
