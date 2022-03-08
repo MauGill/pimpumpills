@@ -532,7 +532,8 @@ body .gift-card {
 body .art {
   margin: 20px;
   display: flex;
-  height: 30%; }
+  height: 30%;
+  align-items: center; }
   body .art .descr-art {
     display: flex;
     flex-direction: column;
@@ -587,12 +588,14 @@ body .art {
       align-items: center;
       margin: inherit;
       width: 90%;
-      justify-content: center; }
+      justify-content: center;
+      align-self: center; }
       body .art .descr-art h2 {
         font-size: 43px;
         color: #fc54a3;
         width: 85%;
-        text-align: center; }
+        text-align: center;
+        margin: 0; }
       body .art .descr-art p {
         color: white;
         width: 85%;
@@ -603,7 +606,8 @@ body .art {
 body .products {
   margin: 20px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 50px; }
   body .products .glider-contain {
     align-items: center;
     justify-content: center;
@@ -630,7 +634,8 @@ body .footer .phrase {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  margin: 0px 20px; }
   body .footer .phrase h2 {
     font-size: 6vw;
     text-transform: uppercase;
@@ -688,6 +693,7 @@ body .footer .rights {
   body .footer .rights {
     font-size: 2.5vw;
     flex-direction: column;
-    line-height: 20px; } }
+    line-height: 20px;
+    padding: 0px 20px; } }
 
 /*# sourceMappingURL=style.css.map */
