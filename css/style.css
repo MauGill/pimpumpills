@@ -273,12 +273,12 @@ body .pimpum {
   body .pimpum h2 {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 13vh;
+    font-size: 7vw;
     text-align: center;
     margin: 20px 0 0 0; }
   body .pimpum p {
     font-weight: 300;
-    font-size: 4vh;
+    font-size: 2vw;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 4px;
@@ -536,12 +536,11 @@ body .art {
   body .art .descr-art {
     display: flex;
     flex-direction: column;
-    margin: 50px 150px 0px 50px;
+    margin: 20px 150px 0px 50px;
     width: 30%;
     text-transform: uppercase;
     justify-content: end;
-    position: absolute;
-    height: 50%; }
+    position: absolute; }
     body .art .descr-art h2 {
       font-size: 3vw;
       color: white; }
@@ -587,8 +586,7 @@ body .art {
     body .art .descr-art {
       align-items: center;
       margin: inherit;
-      height: 40%;
-      width: 80%;
+      width: 90%;
       justify-content: center; }
       body .art .descr-art h2 {
         font-size: 43px;
@@ -623,5 +621,73 @@ body .products {
   body .products .glider {
     display: flex;
     width: 100%; }
+
+/* ------------------------------------------------------------------------------------------------------ */
+/*                                          Footer */
+body .footer .phrase {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 80px; }
+  body .footer .phrase h2 {
+    font-size: 6vw;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px; }
+  body .footer .phrase p {
+    font-size: 3.5vh;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+body .footer .info {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px 10px 0px; }
+  body .footer .info ul {
+    color: white;
+    text-transform: uppercase;
+    list-style: none;
+    margin-bottom: 20px;
+    color: #fc54a3;
+    letter-spacing: 2px; }
+    body .footer .info ul li {
+      text-decoration: none;
+      line-height: 2vw;
+      font-size: 0.9vw;
+      padding-top: 10px; }
+    body .footer .info ul a {
+      color: white;
+      text-decoration: none; }
+body .footer .rights {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.7vw; }
+
+/*                                          Optimizacion  */
+/*                                          Optimizacion telefono */
+@media (max-width: 450px) {
+  body .footer .phrase h2 {
+    font-size: 10vw; }
+  body .footer .phrase p {
+    font-size: 4vw; }
+  body .footer .info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    body .footer .info ul {
+      padding: 0; }
+      body .footer .info ul li {
+        font-size: 3vw; }
+  body .footer .rights {
+    font-size: 2.5vw;
+    flex-direction: column;
+    line-height: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
