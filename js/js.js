@@ -1,3 +1,4 @@
+
 /*                                                      Toggle navbar */
 const navToggler = document.querySelector(".nav-toggler");
 const car = document.querySelector(".car")
@@ -36,3 +37,16 @@ window.addEventListener("scroll", function(){
 window.addEventListener("load", function(){
     AOS.init()
 })
+
+/*                                                      Carousel scroll */
+window.addEventListener('load', function(){
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 4,
+      draggable: true,
+      arrows: {
+          prev:'.glider-prev',
+          next:'.glider-next'
+      },
+      dots:'dots'
+    })
+  })
